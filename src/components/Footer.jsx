@@ -70,6 +70,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
               </li>
           </ul>
           </div>
+          
           <div className="">
               <h4 className="text-lg font-medium  mb-4">Follow Us</h4>
               <div className="flex flex-row md:flex-col gap-4 ">
