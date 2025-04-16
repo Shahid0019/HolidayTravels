@@ -68,12 +68,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
                   Contact
                 </button>
               </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                  Blog
-                </a>
-              </li>
-            </ul>
+          </ul>
           </div>
           <div className="">
               <h4 className="text-lg font-medium  mb-4">Follow Us</h4>
