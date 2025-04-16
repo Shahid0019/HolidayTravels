@@ -1,11 +1,12 @@
 import { forwardRef } from "react"
 import PackageCard from "./PackageCard"
-import gulmarg from "../assets/gulmarg.jpg"
-import ladakh from "../assets/ladakh.jpg"
-import pahalgam from "../assets/pahalgam.jpg"
-import sonamarg from "../assets/sonamarg.jpg"
-import guraz from "../assets/guraz.jpg"
-import karen from "../assets/karen.jpg"
+import gulmarg from "../assets/gulmarg.jpg?as=webp"
+import ladakh from "../assets/ladakh.jpg?as=webp"
+import pahalgam from "../assets/pahalgam.jpg?as=webp"
+import sonamarg from "../assets/sonamarg.jpg?as=webp"
+import guraz from "../assets/guraz.jpg?as=webp"
+import karen from "../assets/karen.jpg?as=webp"
+
 const packagesData = [
   {
     id: 1,
