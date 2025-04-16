@@ -1,8 +1,7 @@
 
 import { forwardRef } from "react"
-
 import { ChevronRight, Star } from "lucide-react"
-
+import img from "../assets/dalLake.jpg"
 const Hero = forwardRef(function Hero({ scrollToPackages, scrollToContact }, ref) {
   return (
     <section ref={ref} className="pt-24 pb-16 md:pt-32 md:pb-24">
@@ -33,7 +32,7 @@ const Hero = forwardRef(function Hero({ scrollToPackages, scrollToContact }, ref
           </div>
           <div className="md:w-1/2 relative">
             <div className="relative  w-full rounded-xl overflow-hidden shadow-xl">
-              <img src="./src/assets/dalLake.jpg" alt="Kashmir Dal Lake" className="object-cover" />
+              <img src={img} alt="Kashmir Dal Lake" className="object-cover" />
             </div>
             <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg hidden md:block">
               <div className="flex items-center">
