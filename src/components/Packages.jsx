@@ -1,10 +1,16 @@
 import { forwardRef } from "react"
 import PackageCard from "./PackageCard"
+import gulmarg from "../assets/gulmarg.jpg"
+import ladakh from "../assets/ladakh.jpg"
+import pahalgam from "../assets/pahalgam.jpg"
+import sonamarg from "../assets/sonamarg.jpg"
+import guraz from "../assets/guraz.jpg"
+import karen from "../assets/karen.jpg"
 const packagesData = [
   {
     id: 1,
     title: "Gulmarg Adventure",
-    image: "../assets/gulmarg.jpg",
+    image: gulmarg,
     rating: 5,
     reviews: 96,
     duration: "6 Days / 5 Nights",
@@ -15,7 +21,7 @@ const packagesData = [
   {
     id: 2,
     title: "Ladakh Adventure",
-    image: "../assets/ladakh.jpg",
+    image: ladakh,
     rating: 4,
     reviews: 45,
     duration: "7 Days / 6 Nights",
@@ -26,7 +32,7 @@ const packagesData = [
   {
     id: 3,
     title: "Pahalgam Retreat",
-    image: "../assets/pahalgam.jpg",
+    image: pahalgam,
     rating: 4,
     reviews: 74,
     duration: "4 Days / 3 Nights",
@@ -37,7 +43,7 @@ const packagesData = [
   {
     id: 4,
     title: "Sonamarg Glacier Tour",
-    image: "../assets/sonamarg.jpg",
+    image: sonamarg,
     rating: 4,
     reviews: 62,
     duration: "5 Days / 4 Nights",
@@ -48,7 +54,7 @@ const packagesData = [
   {
     id: 5,
     title: "Guraz Valley Explorer",
-    image: "../assets/guraz.jpg",
+    image: guraz,
     rating: 5,
     reviews: 156,
     duration: "10 Days / 9 Nights",
@@ -59,7 +65,7 @@ const packagesData = [
   {
     id: 6,
     title: "Karen Valley Explorer",
-    image: "../assets/karen.jpg",
+    image: karen,
     rating: 4,
     reviews: 89,
     duration: "7 Days / 6 Nights",
