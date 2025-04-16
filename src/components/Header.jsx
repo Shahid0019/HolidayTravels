@@ -14,7 +14,7 @@ export default function Header({ scrollToSection, heroRef, aboutRef, packagesRef
     <header className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-            <img src="./src/assets/Holidaylogo.png" alt="Logo" className="text-white font-bold w-10 h-8" />
+            <img src="../assets/Holidaylogo.png" alt="Logo" className="text-white font-bold w-10 h-8" />
           <h1 className="text-xl font-bold text-emerald-800">Holiday Travels</h1>
         </div>
 
