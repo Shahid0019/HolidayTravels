@@ -1,11 +1,10 @@
 import { forwardRef } from "react"
 import PackageCard from "./PackageCard"
-
 const packagesData = [
   {
     id: 1,
     title: "Gulmarg Adventure",
-    image: "./src/assets/gulmarg.jpg",
+    image: "../assets/gulmarg.jpg",
     rating: 5,
     reviews: 96,
     duration: "6 Days / 5 Nights",
@@ -16,7 +15,7 @@ const packagesData = [
   {
     id: 2,
     title: "Ladakh Adventure",
-    image: "./src/assets/ladakh.jpg",
+    image: "../assets/ladakh.jpg",
     rating: 4,
     reviews: 45,
     duration: "7 Days / 6 Nights",
@@ -27,7 +26,7 @@ const packagesData = [
   {
     id: 3,
     title: "Pahalgam Retreat",
-    image: "./src/assets/pahalgam.jpg",
+    image: "../assets/pahalgam.jpg",
     rating: 4,
     reviews: 74,
     duration: "4 Days / 3 Nights",
@@ -38,7 +37,7 @@ const packagesData = [
   {
     id: 4,
     title: "Sonamarg Glacier Tour",
-    image: "./src/assets/sonamarg.jpg",
+    image: "../assets/sonamarg.jpg",
     rating: 4,
     reviews: 62,
     duration: "5 Days / 4 Nights",
@@ -49,7 +48,7 @@ const packagesData = [
   {
     id: 5,
     title: "Guraz Valley Explorer",
-    image: "./src/assets/guraz.jpg",
+    image: "../assets/guraz.jpg",
     rating: 5,
     reviews: 156,
     duration: "10 Days / 9 Nights",
@@ -60,7 +59,7 @@ const packagesData = [
   {
     id: 6,
     title: "Karen Valley Explorer",
-    image: "./src/assets/karen.jpg",
+    image: "../assets/karen.jpg",
     rating: 4,
     reviews: 89,
     duration: "7 Days / 6 Nights",

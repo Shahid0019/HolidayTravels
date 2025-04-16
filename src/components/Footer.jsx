@@ -1,4 +1,4 @@
-
+import logo from "../assets/Holidaylogo.png"
 export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef, contactRef }) {
   const currentYear = new Date().getFullYear()
 
@@ -8,7 +8,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-             <img src="./src/assets/Holidaylogo.png" alt="" className="w-28 H-24" />
+             <img src={logo} alt="HolidayTravelsLogo" className="w-28 H-24" />
               <h2 className="text-xl font-bold">Holiday Travels</h2>
             </div>
             <p className="text-gray-400 mb-4">

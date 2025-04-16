@@ -23,7 +23,7 @@ const Hero = forwardRef(function Hero({ scrollToPackages, scrollToContact }, ref
                 Explore Packages <ChevronRight className="ml-2" size={18} />
               </button>
               <a
-                href="tel:+919086066622"
+                href="tel:+916005592530"
                 className="text-center px-6 py-3 border border-emerald-600 text-emerald-600 font-medium rounded-lg hover:bg-emerald-50 transition duration-300"
               >
                 Contact Us

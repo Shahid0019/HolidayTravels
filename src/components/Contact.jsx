@@ -1,6 +1,6 @@
 import { forwardRef } from "react"
 import { MapPin } from "lucide-react"
-
+import img from "../assets/HolidayImg.jpg"
 const Contact = forwardRef(function Contact(props, ref) {
   return (
     <section ref={ref} className="py-16 bg-gray-50">
@@ -77,7 +77,7 @@ const Contact = forwardRef(function Contact(props, ref) {
               </button>
             </form>
           </div> */}
- <img src="./src/assets/HolidayImg.jpg" alt="HolidayTravels" className="object-cover rounded-lg shadow-md"/>
+ <img src={img} alt="HolidayTravels" className="object-cover rounded-lg shadow-md"/>
 
           <div className="bg-white p-8 rounded-xl shadow-md">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>

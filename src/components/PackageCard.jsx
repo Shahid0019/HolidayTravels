@@ -28,7 +28,7 @@ export default function PackageCard({ title, image, rating, reviews, duration, d
           {/* <p className="text-2xl font-bold text-emerald-600">
             ₹{price} <span className="text-sm font-normal text-gray-500">per person</span>
           </p> */}
-          <a href="tel:+919086066622" className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition duration-300">
+          <a href="tel:+916005592530" className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition duration-300">
             Contact Now
           </a>
         </div>
