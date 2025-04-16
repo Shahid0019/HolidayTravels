@@ -6,7 +6,7 @@ export default function PackageCard({ title, image, rating, reviews, duration, d
       <div className="relative h-64">
         <img src={image || "/placeholder.svg"} alt={title} fill className="object-cover w-full h-full" />
         {tag && (
-          <div className="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+          <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-600 to-red-400 text-white px-3 py-1 rounded-full text-sm font-medium">
             {tag}
           </div>
         )}
@@ -25,10 +25,11 @@ export default function PackageCard({ title, image, rating, reviews, duration, d
         </div>
         <p className="text-gray-600 mb-4">{description}</p>
         <div className="flex justify-between items-center">
-          {/* <p className="text-2xl font-bold text-emerald-600">
-            ₹{price} <span className="text-sm font-normal text-gray-500">per person</span>
-          </p> */}
-          <a href="tel:+916005592530" className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition duration-300">
+         
+          <a 
+            href="tel:+916005592530" 
+            className="px-4 py-2 bg-gradient-to-r from-pink-600 to-red-400 text-white rounded-lg hover:scale-105 transition-transform duration-300"
+          >
             Contact Now
           </a>
         </div>

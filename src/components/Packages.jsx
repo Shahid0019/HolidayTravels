@@ -16,7 +16,7 @@ const packagesData = [
   {
     id: 2,
     title: "Ladakh Adventure",
-    image: "/ladakh.jpg",
+    image: "https://images.unsplash.com/photo-1593118845043-359e5f628214?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4,
     reviews: 45,
     duration: "7 Days / 6 Nights",
@@ -27,7 +27,7 @@ const packagesData = [
   {
     id: 3,
     title: "Pahalgam Retreat",
-    image: "/pahalgam.jpg",
+    image: "https://images.unsplash.com/photo-1641593758596-39b200b51e8d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4,
     reviews: 74,
     duration: "4 Days / 3 Nights",
@@ -38,7 +38,7 @@ const packagesData = [
   {
     id: 4,
     title: "Sonamarg Glacier Tour",
-    image: "/sonamarg.jpg",
+    image: "https://images.unsplash.com/photo-1643449415972-87d4cfe882a1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4,
     reviews: 62,
     duration: "5 Days / 4 Nights",
@@ -49,7 +49,7 @@ const packagesData = [
   {
     id: 5,
     title: "Guraz Valley Explorer",
-    image: "/guraz.jpg",
+    image: "https://images.unsplash.com/photo-1664787357457-4eda9cbe1245?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 5,
     reviews: 156,
     duration: "10 Days / 9 Nights",
@@ -60,11 +60,11 @@ const packagesData = [
   {
     id: 6,
     title: "Karen Valley Explorer",
-    image: "/karen.jpg",
+    image: "https://images.unsplash.com/photo-1720660826724-3b94ca998dcf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4,
     reviews: 89,
     duration: "7 Days / 6 Nights",
-    description: "Experience the untouched beauty of Karen Valley, including the stunning Apharwat Peak, and enjoy pony rides, trekking, and camping.",
+    description: "Experience the serene beauty of Karen Valley, trekking, and camping amidst breathtaking landscapes.",
     price: "39,999",
     tag: "New",
   },
@@ -76,7 +76,7 @@ const Packages = forwardRef(function Packages(props, ref) {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Tour Packages</h2>
-          <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-pink-600 to-red-400 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-600">
             Choose from our carefully crafted packages to experience the best of Kashmir.
           </p>

@@ -1,49 +1,35 @@
-
 import { forwardRef } from "react"
-import { ChevronRight, Star } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import img from "../assets/dalLake.jpg"
-const Hero = forwardRef(function Hero({ scrollToPackages, scrollToContact }, ref) {
+
+const Hero = forwardRef(function Hero({ scrollToPackages }, ref) {
   return (
-    <section ref={ref} className="pt-24 pb-16 md:pt-32 md:pb-24">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center">
+    <section ref={ref} className="">
+      <div className="relative h-[600px]">
+        <img src={img} alt="Dal Lake" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
               Discover the Paradise on Earth
-              <span className="text-emerald-600"> Kashmir</span>
+              <span className="bg-gradient-to-r from-pink-600 to-red-400 bg-clip-text text-transparent"> Kashmir</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-white/80 mb-8">
               Experience breathtaking landscapes, serene lakes, and majestic mountains in the crown jewel of India.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToPackages}
-                className="px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition duration-300 flex items-center justify-center"
+                className="px-6 py-3 bg-gradient-to-r from-pink-600 to-red-400 text-white rounded-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center"
               >
                 Explore Packages <ChevronRight className="ml-2" size={18} />
               </button>
               <a
                 href="tel:+916005592530"
-                className="text-center px-6 py-3 border border-emerald-600 text-emerald-600 font-medium rounded-lg hover:bg-emerald-50 transition duration-300"
+                className="px-6 py-3 border border-white text-white font-medium rounded-lg hover:bg-white/10 transition duration-300"
               >
                 Contact Us
               </a>
-            </div>
-          </div>
-          <div className="md:w-1/2 relative">
-            <div className="relative  w-full rounded-xl overflow-hidden shadow-xl">
-              <img src={img} alt="Kashmir Dal Lake" className="object-cover" />
-            </div>
-            <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg hidden md:block">
-              <div className="flex items-center">
-                <div className="bg-yellow-400 p-2 rounded-full mr-3">
-                  <Star className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <p className="font-bold text-gray-800">4.9/5 Rating</p>
-                  <p className="text-sm text-gray-500">From 2,000+ reviews</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
