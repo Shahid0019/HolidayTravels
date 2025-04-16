@@ -5,7 +5,7 @@ const packagesData = [
   {
     id: 1,
     title: "Gulmarg Adventure",
-    image: "./src/assets/Gulmarg.jpg",
+    image: "./src/assets/gulmarg.jpg",
     rating: 5,
     reviews: 96,
     duration: "6 Days / 5 Nights",
@@ -16,7 +16,7 @@ const packagesData = [
   {
     id: 2,
     title: "Ladakh Adventure",
-    image: "./src/assets/Ladakh.jpg",
+    image: "./src/assets/ladakh.jpg",
     rating: 4,
     reviews: 45,
     duration: "7 Days / 6 Nights",
@@ -27,7 +27,7 @@ const packagesData = [
   {
     id: 3,
     title: "Pahalgam Retreat",
-    image: "./src/assets/Pahalgam.jpg",
+    image: "./src/assets/pahalgam.jpg",
     rating: 4,
     reviews: 74,
     duration: "4 Days / 3 Nights",
@@ -37,8 +37,8 @@ const packagesData = [
   },
   {
     id: 4,
-    title: "Sonmarg Glacier Tour",
-    image: "./src/assets/Sonmarg.jpg",
+    title: "Sonamarg Glacier Tour",
+    image: "./src/assets/sonamarg.jpg",
     rating: 4,
     reviews: 62,
     duration: "5 Days / 4 Nights",
@@ -49,7 +49,7 @@ const packagesData = [
   {
     id: 5,
     title: "Guraz Valley Explorer",
-    image: "./src/assets/Guraz.jpg",
+    image: "./src/assets/guraz.jpg",
     rating: 5,
     reviews: 156,
     duration: "10 Days / 9 Nights",
@@ -60,7 +60,7 @@ const packagesData = [
   {
     id: 6,
     title: "Karen Valley Explorer",
-    image: "./src/assets/Karen.jpg",
+    image: "./src/assets/karen.jpg",
     rating: 4,
     reviews: 89,
     duration: "7 Days / 6 Nights",
