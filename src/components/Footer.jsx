@@ -181,17 +181,6 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             &copy; {currentYear} Kashmir Travels. All rights reserved.
           </p>
-          <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-300">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-300">
-              Terms of Service
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition duration-300">
-              Cookie Policy
-            </a>
-          </div>
         </div>
       </div>
     </footer>
