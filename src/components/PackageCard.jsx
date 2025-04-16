@@ -80,7 +80,7 @@ export default function PackageCard({
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <h3 className="text-xl font-bold text-gray-800 mb-4">{title} - Things To Do</h3>
+          <h3 className="text-lg font-bold text-gray-800 mb-4">{title} - Things To Do</h3>
           <ul className="list-disc pl-5 space-y-2 text-gray-600 text-sm">
             {thingsToDo.map((item, index) => (
               <li key={index}>{item}</li>
@@ -88,15 +88,13 @@ export default function PackageCard({
           </ul>
           <button
             onClick={() => setIsFlipped(false)}
-            className="mt-6 w-full px-4 py-2 border border-pink-500 text-pink-600 rounded-lg hover:bg-pink-50 transition text-sm"
+            className="mt-4 w-full px-4 py-2 border border-pink-500 text-pink-600 rounded-lg hover:bg-pink-50 transition text-sm"
           >
             Go Back
           </button>
           <p className="mt-1 text-gray-600 text-sm">
             Note: Please contact us to customize your package.
           </p>
-          
-
         </div>
       </div>
     </div>

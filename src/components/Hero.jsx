@@ -17,7 +17,7 @@ const Hero = forwardRef(function Hero({ scrollToPackages }, ref) {
             <p className="text-lg text-white/80 mb-8">
               Experience breathtaking landscapes, serene lakes, and majestic mountains in the crown jewel of India.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center ">
+            <div className="flex  flex-row gap-4 items-center justify-center ">
               <button
                 onClick={scrollToPackages}
                 className="px-6 py-3 bg-gradient-to-r from-pink-600 to-red-400 text-white rounded-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center"
