@@ -58,21 +58,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
           <div className="">
               <h4 className="text-lg font-medium  mb-4">Follow Us</h4>
               <div className="flex flex-row md:flex-col gap-4 ">
-                {/* <a
-                  href="#"
-                  className="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center hover:bg-emerald-200 transition duration-300"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    className="text-emerald-600"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                  </svg>
-                </a> */}
+             
                 <a
                   href="https://www.instagram.com/holidaytravels9/"
                   className="h-10 w-10 rounded-full bg-gradient-to-r from-pink-600 to-red-400 text-white flex items-center justify-center hover:bg-emerald-200 transition duration-300"
@@ -127,54 +113,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
               </a>
               </div>
             </div>
-          {/* <div>
-            <h3 className="text-lg font-bold mb-4">Tour Packages</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                  Dal Lake Explorer
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                  Gulmarg Adventure
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                  Pahalgam Retreat
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                  Sonmarg Glacier Tour
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                  Complete Kashmir
-                </a>
-              </li>
-            </ul>
-          </div> */}
-
-          {/* <div>
-            <h3 className="text-lg font-bold mb-4">Newsletter</h3>
-            <p className="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
-            <form className="space-y-2">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition text-white"
-              />
-              <button
-                type="submit"
-                className="w-full px-4 py-2 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition duration-300"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div> */}
+        
         </div>
 
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">

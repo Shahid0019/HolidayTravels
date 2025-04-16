@@ -1,5 +1,5 @@
-import { forwardRef } from "react"
-import PackageCard from "./PackageCard"
+import { forwardRef } from "react";
+import PackageCard from "./PackageCard";
 
 const packagesData = [
   {
@@ -12,6 +12,14 @@ const packagesData = [
     description: "Ski in winter or trek in summer at Gulmarg, with gondola rides and stunning views.",
     price: "29,999",
     tag: null,
+    famousPlaces: [
+      "Apharwat Peak",
+      "Alpather Lake",
+      "Gulmarg Biosphere Reserve",
+      "Strawberry Valley",
+      "St. Mary's Church",
+    ],
+    thingsToDo: ["Gondola Ride", "Golfing", "Trekking", "Photography"],
   },
   {
     id: 2,
@@ -23,6 +31,14 @@ const packagesData = [
     description: "Experience the rugged beauty of Ladakh, with breathtaking landscapes, serene lakes, and ancient monasteries.",
     price: "49,999",
     tag: "New",
+    famousPlaces: [
+      "Pangong Tso",
+      "Khardung La",
+      "Nubra Valley",
+      "Thiksey Monastery",
+      "Leh Palace",
+    ],
+    thingsToDo: ["Stargazing", "Trekking", "Cultural Tours", "Motorbiking"],
   },
   {
     id: 3,
@@ -34,6 +50,14 @@ const packagesData = [
     description: "Relax by the Lidder River, explore Betaab Valley, and enjoy the serene beauty of Pahalgam.",
     price: "19,999",
     tag: "New",
+    famousPlaces: [
+      "Betaab Valley",
+      "Aru Valley",
+      "Tulian Lake",
+      "Baisaran Hills",
+      "Overa-Aru Wildlife Sanctuary",
+    ],
+    thingsToDo: ["River Rafting", "Horse Riding", "Trekking", "Fishing"],
   },
   {
     id: 4,
@@ -45,6 +69,14 @@ const packagesData = [
     description: 'Visit the Thajiwas Glacier, enjoy pony rides, and experience the "Meadow of Gold."',
     price: "22,999",
     tag: null,
+    famousPlaces: [
+      "Thajiwas Glacier",
+      "Zoji La Pass",
+      "Gangabal Lake",
+      "Baltal Valley",
+      "Nilagrad River",
+    ],
+    thingsToDo: ["Trekking", "Camping", "Photography", "Fishing"],
   },
   {
     id: 5,
@@ -56,6 +88,14 @@ const packagesData = [
     description: "Explore the lesser-known, untouched beauty of Guraz Valley, including the stunning Apharwat Peak.",
     price: "45,999",
     tag: "Popular",
+    famousPlaces: [
+      "Habba Khatoon Peak",
+      "Tulail Valley",
+      "Kishanganga River",
+      "Dawar",
+      "Khandyal Heights",
+    ],
+    thingsToDo: ["Trekking", "Camping", "Cultural Tours", "Photography"],
   },
   {
     id: 6,
@@ -67,8 +107,21 @@ const packagesData = [
     description: "Experience the serene beauty of Karen Valley, trekking, and camping amidst breathtaking landscapes.",
     price: "39,999",
     tag: "New",
+    famousPlaces: [
+      "Keran Village",
+      "Baboon Valley",
+      "Patlian Lake",
+      "Neelum River",
+      "Upper Neelum",
+    ],
+    thingsToDo: [
+      "Trekking",
+      "Bird Watching",
+      "Cultural Interaction",
+      "Photography",
+    ],
   },
-]
+];
 
 const Packages = forwardRef(function Packages(props, ref) {
   return (
@@ -81,7 +134,7 @@ const Packages = forwardRef(function Packages(props, ref) {
             Choose from our carefully crafted packages to experience the best of Kashmir.
           </p>
         </div>
-
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packagesData.map((packageItem) => (
             <PackageCard key={packageItem.id} {...packageItem} />
@@ -89,7 +142,7 @@ const Packages = forwardRef(function Packages(props, ref) {
         </div>
       </div>
     </section>
-  )
-})
+  );
+});
 
-export default Packages
+export default Packages;
