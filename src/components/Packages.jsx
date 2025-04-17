@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import { motion, useInView } from "framer-motion";
 import PackageCard from "./PackageCard";
 
 const packagesData = [
@@ -49,15 +50,15 @@ const packagesData = [
     duration: "4 Days / 3 Nights",
     description: "Relax by the Lidder River, explore Betaab Valley, and enjoy the serene beauty of Pahalgam.",
     price: "19,999",
-    tag: "New",
+    tag: null,
     famousPlaces: [
       "Betaab Valley",
-      "Aru Valley",
+      "Arisco Valley",
       "Tulian Lake",
-      "Baisaran Hills",
-      "Overa-Aru Wildlife Sanctuary",
+      "Aru Valley",
+      "Lidder River",
     ],
-    thingsToDo: ["River Rafting", "Horse Riding", "Trekking", "Fishing"],
+    thingsToDo: ["Rafting", "Fishing", "Trekking", "Boating"],
   },
   {
     id: 4,
@@ -124,6 +125,8 @@ const packagesData = [
 ];
 
 const Packages = forwardRef(function Packages(props, ref) {
+  const ref1 = useInView({ once: true });
+
   return (
     <section ref={ref} className="py-16">
       <div className="container mx-auto px-4">
@@ -134,12 +137,24 @@ const Packages = forwardRef(function Packages(props, ref) {
             Choose from our carefully crafted packages to experience the best of Kashmir.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {packagesData.map((packageItem) => (
-            <PackageCard key={packageItem.id} {...packageItem} />
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {packagesData.map((packageItem, index) => (
+            <motion.div
+              key={packageItem.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <PackageCard {...packageItem} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
