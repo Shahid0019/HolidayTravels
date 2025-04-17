@@ -68,7 +68,7 @@ export default function PackageCard({
         {/* Back Side */}
         <div className="absolute inset-0 bg-white rounded-xl shadow-md transform rotate-y-180 backface-hidden p-6 overflow-y-auto">
           {/* Decorative background icons */}
-          <div className="absolute inset-0 overflow-hidden opacity-[0.03] pointer-events-none">
+          <div className="absolute inset-0 overflow-hidden opacity-[0.06] pointer-events-none">
             <Palmtree className="absolute top-5 left-5 w-20 h-20 text-pink-500" />
             <Mountain className="absolute top-10 right-10 w-24 h-24 text-red-400" />
             <Camera className="absolute bottom-20 left-10 w-16 h-16 text-pink-600" />
