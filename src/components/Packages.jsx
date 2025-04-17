@@ -151,7 +151,7 @@ const Packages = forwardRef(function Packages(props, ref) {
               key={packageItem.id}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.35, delay: index * 0.2 }}
+              transition={{ duration: 0.35, delay: index * 0.25 }}
             >
               <PackageCard {...packageItem} />
             </motion.div>
