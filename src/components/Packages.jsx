@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import PackageCard from "./PackageCard";
 
@@ -125,7 +125,8 @@ const packagesData = [
 ];
 
 const Packages = forwardRef(function Packages(props, ref) {
-  const ref1 = useInView({ once: true });
+  const ref1 = useRef(null);
+  const isInView = useInView(ref1, { once: true });
 
   return (
     <section ref={ref} className="py-16">
@@ -139,8 +140,9 @@ const Packages = forwardRef(function Packages(props, ref) {
         </div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          ref={ref1}
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.35 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
@@ -148,7 +150,7 @@ const Packages = forwardRef(function Packages(props, ref) {
             <motion.div
               key={packageItem.id}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.35, delay: index * 0.2 }}
             >
               <PackageCard {...packageItem} />
