@@ -6,7 +6,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-800 text-white py-12 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-800 text-white py-12  overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOHY2YzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJoNnptLTYgNmMwLTYuNjI3LTUuMzczLTEyLTEyLTEydjZjMy4zMTQgMCA2IDIuNjg2IDYgNmg2eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=')]"></div>
