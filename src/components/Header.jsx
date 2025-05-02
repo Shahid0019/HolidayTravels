@@ -12,7 +12,7 @@ export default function Header({ scrollToSection, heroRef, aboutRef, packagesRef
   }
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 ">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

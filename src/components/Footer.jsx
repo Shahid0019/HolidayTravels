@@ -7,11 +7,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
 
   return (
     <footer className="bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-800 text-white py-12  overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOHY2YzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJoNnptLTYgNmMwLTYuNjI3LTUuMzczLTEyLTEyLTEydjZjMy4zMTQgMCA2IDIuNjg2IDYgNmg2eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=')]"></div>
-      </div>
-
+   
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -109,7 +105,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
             <h3 className="text-lg font-bold mb-4 text-blue-200">Contact Us</h3>
             <address className="not-italic text-blue-100">
               <p className="mb-2">Kashmir, India</p>
-              <p className="mb-2">Phone: +91 6005592530</p>
+              <a  href="tel:+916005592530" className="mb-2">Phone: +91 6005592530</a>
               <p>Email: aqibahmad7298@gmail.com</p>
             </address>
           </div>
@@ -119,7 +115,7 @@ export default function Footer({ scrollToSection, heroRef, aboutRef, packagesRef
           <p className="text-blue-200 text-sm mb-4 md:mb-0">
             &copy; {currentYear} Holiday Travels. All rights reserved.
           </p>
-          <div className="text-xs text-blue-300">Designed with ❤️ for travelers</div>
+          <div className="text-xs text-blue-300">Designed with Love"❤️" for travelers</div>
         </div>
       </div>
     </footer>

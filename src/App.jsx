@@ -1,17 +1,15 @@
 import { useRef } from "react"
 import Header from "./components/Header"
-import Hero from "./components/Hero"
 import About from "./components/About"
 import Packages from "./components/Packages"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-
+import Slider from "./components/slider/SliderItems"
 export default function KashmirTourPage() {
   const heroRef = useRef(null)
   const aboutRef = useRef(null)
   const packagesRef = useRef(null)
   const contactRef = useRef(null)
-
   const scrollToSection = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" })
@@ -29,11 +27,14 @@ export default function KashmirTourPage() {
       />
 
       <main className="flex-1">
-        <Hero
+        
+        {/* <Hero
           ref={heroRef}
           scrollToPackages={() => scrollToSection(packagesRef)}
           scrollToContact={() => scrollToSection(contactRef)}
         />
+         */}
+         <Slider />
         <About ref={aboutRef} />
         <Packages ref={packagesRef} />
         <Contact ref={contactRef} />
