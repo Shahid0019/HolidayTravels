@@ -40,7 +40,7 @@ export default function KashmirTourPage() {
         <Contact ref={contactRef} />
       </main>
 
-      <div className="fixed bottom-0 right-0 p-4">
+      <div className="fixed bottom-0 right-0 p-4 z-50">
         <a
           href="https://wa.me/+916005592530"
           target="_blank"
